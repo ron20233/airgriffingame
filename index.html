@@ -4,11 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="refresh" content="0; url=web/">
-    <title>freej2me-web</title>
+    <title>Air Griffin Game</title>
 </head>
 <body>
+    <h1>AirGriffinGame.com</h1>
+    <h2>Controls:</h2>
+    <ul>
+        <li>Esc - Game Options</li>
+        <li>Q - Left Selection Key</li>
+        <li>W - Right Selection Key</li>
+        <li>Arrow Keys - Menu Navigation</li>
+        <li>Enter - OK button</li>
+    </ul>
+    
+    <button onclick="play()">Play Air Griffin Game</button>
     <script>
-        location.href = 'web/';
+        function play() {
+            if (window.confirm("This website is not owned or run by Fox. This is the original game, archived by andrew-lviv.net, which is run using freej2me-web by zb3. I suggest you screenshot (or memorize) the controls. This is only playable using a computer keyboard, sorry mobile users.") == true) {
+                location.href = "https://airgriffingame.com/web/run?app=Air%20Griffin";
+            }
+        }
     </script>
 </body>
 </html>
